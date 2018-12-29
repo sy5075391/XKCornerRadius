@@ -9,6 +9,37 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+```
+   self.view.backgroundColor = [UIColor whiteColor];
+    _frameView = [[UILabel alloc] init];
+    _frameView.backgroundColor = [UIColor redColor];
+    _frameView.text = @"frame";
+    _frameView.frame = CGRectMake(20, 100, 200, 100);
+    
+    _frameView.xk_openClip = YES;
+    _frameView.xk_radius = 20;
+    _frameView.xk_clipType = XKCornerClipTypeTopRight|XKCornerClipTypeBottomLeft;
+    
+    [self.view addSubview:_frameView];
+    
+    _masonryView = [[UILabel alloc] init];
+    _masonryView.text = @"autoLayout";
+    _masonryView.xk_openClip = YES;
+    _masonryView.xk_radius = 20;
+    _masonryView.backgroundColor = [UIColor orangeColor];
+    _masonryView.xk_clipType = XKCornerClipTypeTopRight|XKCornerClipTypeTopLeft;
+    
+    [self.view addSubview:_masonryView];
+    
+    [_masonryView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.frameView.mas_bottom).offset(40);
+        make.left.equalTo(self.frameView);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
+```
+![Simulator Screen Shot - iPhone X - 2018-12-29 at 17.18.47.png](https://upload-images.jianshu.io/upload_images/1956050-e3545b9307f045cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ## Requirements
 
 ## Installation
