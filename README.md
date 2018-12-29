@@ -22,7 +22,7 @@ pod 'XKCornerRadius'
 
 ## Author
 
-sy5075391, 447523382@qq.com
+Jamesholy, 447523382@qq.com,https://www.jianshu.com/u/2df38653a8d4
 
 ## License
 

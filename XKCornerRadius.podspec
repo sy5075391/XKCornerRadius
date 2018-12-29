@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: 高性能圆角工具。支持frame，AutoLayout布局
                        DESC
 
-  s.homepage         = 'https://www.jianshu.com/u/2df38653a8d4'
+  s.homepage         = 'https://github.com/sy5075391/XKCornerRadius'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sy5075391' => '447523382@qq.com' }
-  s.source           = { :git => 'https://github.com/sy5075391/XKCornerRadius.git', :tag => 1.0.0 }
+  s.source           = { :git => 'https://github.com/sy5075391/XKCornerRadius.git', :tag => "1.0.0" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
