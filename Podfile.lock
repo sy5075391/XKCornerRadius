@@ -1,12 +1,26 @@
 PODS:
   - Masonry (1.1.0)
+  - XKLogBoard (1.0.0):
+    - Masonry
+    - YYText
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - Masonry
+  - XKLogBoard (= 1.0.0)
+
+SPEC REPOS:
+  https://git.dev.tencent.com/sy5075391/XKCodingSpec.git:
+    - XKLogBoard
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - YYText
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  XKLogBoard: 8e6ff347299ea8d70f64d6269027e31c301338e9
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 1f8c4c6903fad29a74cb40a2054b3fedd53019ff
+PODFILE CHECKSUM: a76297a9a23c0399c1654a2301561f337ab65c3b
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
