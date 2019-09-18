@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A18BC4E23320D29002A1049 /* UIView+XKCornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18BC4D23320D29002A1049 /* UIView+XKCornerBorder.m */; };
+		1A18BC5123320E4E002A1049 /* RadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18BC5023320E4E002A1049 /* RadiusViewController.m */; };
+		1A18BC5423320E5B002A1049 /* BorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18BC5323320E5B002A1049 /* BorderViewController.m */; };
 		1AA4385021D7533D00165982 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4384F21D7533D00165982 /* AppDelegate.m */; };
 		1AA4385321D7533D00165982 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4385221D7533D00165982 /* ViewController.m */; };
 		1AA4385621D7533D00165982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA4385421D7533D00165982 /* Main.storyboard */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A18BC4C23320D29002A1049 /* UIView+XKCornerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XKCornerBorder.h"; sourceTree = "<group>"; };
+		1A18BC4D23320D29002A1049 /* UIView+XKCornerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XKCornerBorder.m"; sourceTree = "<group>"; };
+		1A18BC4F23320E4E002A1049 /* RadiusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadiusViewController.h; sourceTree = "<group>"; };
+		1A18BC5023320E4E002A1049 /* RadiusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadiusViewController.m; sourceTree = "<group>"; };
+		1A18BC5223320E5B002A1049 /* BorderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderViewController.h; sourceTree = "<group>"; };
+		1A18BC5323320E5B002A1049 /* BorderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderViewController.m; sourceTree = "<group>"; };
 		1AA4384B21D7533D00165982 /* PodExampleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodExampleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA4384E21D7533D00165982 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AA4384F21D7533D00165982 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +82,10 @@
 				1AA4384F21D7533D00165982 /* AppDelegate.m */,
 				1AA4385121D7533D00165982 /* ViewController.h */,
 				1AA4385221D7533D00165982 /* ViewController.m */,
+				1A18BC4F23320E4E002A1049 /* RadiusViewController.h */,
+				1A18BC5023320E4E002A1049 /* RadiusViewController.m */,
+				1A18BC5223320E5B002A1049 /* BorderViewController.h */,
+				1A18BC5323320E5B002A1049 /* BorderViewController.m */,
 				1AA4385421D7533D00165982 /* Main.storyboard */,
 				1AA4385721D7533F00165982 /* Assets.xcassets */,
 				1AA4385921D7533F00165982 /* LaunchScreen.storyboard */,
@@ -93,6 +106,8 @@
 		1AA4386F21D7566F00165982 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1A18BC4C23320D29002A1049 /* UIView+XKCornerBorder.h */,
+				1A18BC4D23320D29002A1049 /* UIView+XKCornerBorder.m */,
 				1AA4387021D7566F00165982 /* UIView+XKCornerRadius.h */,
 				1AA4387221D7566F00165982 /* UIView+XKCornerRadius.m */,
 			);
@@ -227,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A18BC5123320E4E002A1049 /* RadiusViewController.m in Sources */,
+				1A18BC5423320E5B002A1049 /* BorderViewController.m in Sources */,
 				1AA4385321D7533D00165982 /* ViewController.m in Sources */,
 				1AA4385E21D7533F00165982 /* main.m in Sources */,
 				1AA4387421D7566F00165982 /* UIView+XKCornerRadius.m in Sources */,
+				1A18BC4E23320D29002A1049 /* UIView+XKCornerBorder.m in Sources */,
 				1AA4385021D7533D00165982 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,12 +392,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YW7HA2BZ4H;
 				INFOPLIST_FILE = PodExampleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = code.PodExampleDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoke.GRoom.Rel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,12 +411,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YW7HA2BZ4H;
 				INFOPLIST_FILE = PodExampleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = code.PodExampleDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoke.GRoom.Rel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
